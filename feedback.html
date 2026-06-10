@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback - TravelNest</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/flavcon3.jpg">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<nav>
+  <div id="brand">TravelNest</div>
+  <div id="hamburger">☰</div>
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destination Explorer</a></li>
+    <li><a href="planner.html">Trip Budget Planner</a></li>
+    <li><a href="random.html">Random Trip</a></li>
+    <li><a href="mood.html">Travel Mood</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<section id="feedback">
+  <div id="feedback-header">
+    <h1>Feedback & Support</h1>
+    <p>We'd love to hear from you</p>
+  </div>
+
+  <div id="feedback-form">
+    <div class="form-group">
+      <label for="feedback-name">Name</label>
+      <input type="text" id="feedback-name" placeholder="Your name">
+    </div>
+
+    <div class="form-group">
+      <label for="feedback-email">Email</label>
+      <input type="email" id="feedback-email" placeholder="Your email">
+    </div>
+
+    <div class="form-group">
+      <label for="feedback-message">Message</label>
+      <textarea id="feedback-message" placeholder="Your message" rows="5"></textarea>
+    </div>
+
+    <button id="feedback-btn">Send Feedback</button>
+    <p id="feedback-error"></p>
+    <p id="feedback-success"></p>
+  </div>
+
+  <div id="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">Is TravelNest free to use?</button>
+      <div class="faq-answer">
+        <p>Yes, TravelNest is completely free. All features including the budget planner and destination explorer are available at no cost.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How does the Destination of the Day work?</button>
+      <div class="faq-answer">
+        <p>The destination changes daily based on the current date. JavaScript uses the day of the month to pick a different destination from our list every day.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Where is my data stored?</button>
+      <div class="faq-answer">
+        <p>All your data — saved trips, wishlist, visited destinations and newsletter email — is stored locally in your browser using localStorage. Nothing is sent to a server.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I use TravelNest on mobile?</button>
+      <div class="faq-answer">
+        <p>Yes, TravelNest is fully responsive and works on mobile, tablet and desktop devices.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How does the Random Trip Generator work?</button>
+      <div class="faq-answer">
+        <p>It filters destinations based on your selected travel type and budget range, then picks one randomly using JavaScript's Math.random() function.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

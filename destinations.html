@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Destination Explorer - TravelNest</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/flavcon3.jpg">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<nav>
+  <div id="brand">TravelNest</div>
+  <div id="hamburger">☰</div>
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destination Explorer</a></li>
+    <li><a href="planner.html">Trip Budget Planner</a></li>
+    <li><a href="random.html">Random Trip</a></li>
+    <li><a href="mood.html">Travel Mood</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<section id="explorer">
+  <div id="explorer-header">
+    <h1>Destination Explorer</h1>
+    <p>Find your next adventure</p>
+  </div>
+
+  <div id="filters">
+    <input type="text" id="search-input" placeholder="Search destinations...">
+    <select id="continent-filter">
+      <option value="all">All Continents</option>
+      <option value="Europe">Europe</option>
+      <option value="Asia">Asia</option>
+      <option value="Africa">Africa</option>
+      <option value="North America">North America</option>
+      <option value="South America">South America</option>
+      <option value="Oceania">Oceania</option>
+    </select>
+  </div>
+
+  <div id="cards-container"></div>
+
+  <div id="modal-overlay">
+  <div id="modal-box">
+    <button id="modal-close">×</button>
+
+    <img id="modal-img" src="" alt="">
+
+    <h2 id="modal-name"></h2>
+    <p id="modal-country"></p>
+    <p id="modal-desc"></p>
+
+    <h3>Popular Attractions</h3>
+    <ul id="modal-attractions"></ul>
+
+    <h3>Travel Cost Comparison</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Accommodation</th>
+          <th>Food</th>
+          <th>Transport</th>
+        </tr>
+      </thead>
+      <tbody id="modal-costs-body"></tbody>
+    </table>
+  </div>
+</div>
+
+</section>
+
+<script src="destinations.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

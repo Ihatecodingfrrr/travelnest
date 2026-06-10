@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Trip - TravelNest</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/flavcon3.jpg">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<nav>
+  <div id="brand">TravelNest</div>
+  <div id="hamburger">☰</div>
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destination Explorer</a></li>
+    <li><a href="planner.html">Trip Budget Planner</a></li>
+    <li><a href="random.html">Random Trip</a></li>
+    <li><a href="mood.html">Travel Mood</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<section id="random">
+  <div id="random-header">
+    <h1>Random Trip Generator</h1>
+    <p>Not sure where to go? Let us decide</p>
+  </div>
+
+  <div id="random-form">
+    <div class="form-group">
+      <label for="travel-type">Travel Type</label>
+      <select id="travel-type">
+        <option value="all">Any</option>
+        <option value="adventure">Adventure</option>
+        <option value="relaxation">Relaxation</option>
+        <option value="cultural">Cultural</option>
+        <option value="nature">Nature</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="budget-range">Budget Range</label>
+      <select id="budget-range">
+        <option value="all">Any</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    </div>
+
+    <button id="random-btn">Surprise Me ✈</button>
+  </div>
+
+  <div id="random-result">
+    <img id="random-img" src="" alt="">
+    <div id="random-info">
+      <p id="random-label">🌍 Your next destination</p>
+      <h2 id="random-name"></h2>
+      <p id="random-country"></p>
+      <p id="random-desc"></p>
+      <button id="wishlist-btn">Add to Wishlist</button>
+      <p id="wishlist-msg"></p>
+    </div>
+  </div>
+</section>
+
+<script src="destinations.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

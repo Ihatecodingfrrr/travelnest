@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Mood - TravelNest</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/flavcon3.jpg">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<nav>
+  <div id="brand">TravelNest</div>
+  <div id="hamburger">☰</div>
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destination Explorer</a></li>
+    <li><a href="planner.html">Trip Budget Planner</a></li>
+    <li><a href="random.html">Random Trip</a></li>
+    <li><a href="mood.html">Travel Mood</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<section id="mood">
+  <div id="mood-header">
+    <h1>Travel Mood</h1>
+    <p>Set the vibe for your next adventure</p>
+  </div>
+
+  <div id="sounds-section">
+    <h2>Ambient Sounds</h2>
+    <p>Pick a sound to match your travel mood</p>
+    <div id="sound-buttons">
+      <button class="sound-btn" data-sound="beach">🏖 Beach</button>
+      <button class="sound-btn" data-sound="forest">🌲 Forest</button>
+      <button class="sound-btn" data-sound="city">🌆 City</button>
+      <button class="sound-btn" data-sound="rain">🌧 Rain</button>
+    </div>
+    <p id="sound-status">No sound playing</p>
+  </div>
+
+  <div id="visited-section">
+    <h2>Destination Tracker</h2>
+    <p>Mark destinations as visited or planned</p>
+    <div id="visited-cards"></div>
+  </div>
+
+</section>
+
+<script src="destinations.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

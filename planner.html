@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trip Budget Planner - TravelNest</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/flavcon3.jpg">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<nav>
+  <div id="brand">TravelNest</div>
+  <div id="hamburger">☰</div>
+  <ul id="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destinations.html">Destination Explorer</a></li>
+    <li><a href="planner.html">Trip Budget Planner</a></li>
+    <li><a href="random.html">Random Trip</a></li>
+    <li><a href="mood.html">Travel Mood</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<section id="planner">
+  <div id="planner-header">
+    <h1>Trip Budget Planner</h1>
+    <p>Plan your trip without the financial stress</p>
+  </div>
+
+  <div id="planner-form">
+    <div class="form-group">
+      <label for="planner-destination">Destination</label>
+      <input type="text" id="planner-destination" placeholder="e.g. Bali, Japan">
+    </div>
+
+    <div class="form-group">
+      <label for="planner-days">Number of Days</label>
+      <input type="number" id="planner-days" placeholder="e.g. 7" min="1">
+    </div>
+
+    <div class="form-group">
+      <label for="planner-budget">Daily Budget ($)</label>
+      <input type="number" id="planner-budget" placeholder="e.g. 100" min="1">
+    </div>
+
+    <button id="planner-btn">Calculate</button>
+    <p id="planner-error"></p>
+  </div>
+
+  <div id="planner-results">
+    <h2>Your Trip Summary</h2>
+
+    <div id="results-grid">
+      <div class="result-card">
+        <p class="result-label">Destination</p>
+        <p class="result-value" id="result-destination"></p>
+      </div>
+      <div class="result-card">
+        <p class="result-label">Total Days</p>
+        <p class="result-value" id="result-days"></p>
+      </div>
+      <div class="result-card">
+        <p class="result-label">Total Cost</p>
+        <p class="result-value" id="result-total"></p>
+      </div>
+      <div class="result-card">
+        <p class="result-label">Budget Status</p>
+        <p class="result-value" id="result-status"></p>
+      </div>
+    </div>
+
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+    <p id="progress-label"></p>
+
+    <button id="save-btn">Save Trip</button>
+    <p id="save-msg"></p>
+  </div>
+
+</section>
+
+<script src="destinations.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
